@@ -2,7 +2,25 @@
 
 body {
     background-color: #0A192F;
-    font-family: 'SF Mono', sans-serif;
+    font-family: 'SF Mono', 'Calibre', sans-serif;
+}
+
+.color_cyan {
+    color: #64FFDA;
+}
+
+.color_whitegrey {
+color: #CCD6F6;
+}
+
+.color_darkgrey {
+    color: #7e8499;
+}
+
+#font_change {
+    font-family: 'Calibre';
+    font-weight: bolder;
+    font-size: 5em;
 }
 
 /* HEADER */
@@ -83,6 +101,45 @@ li.navbar_items::before {
 
 
 
+/* BODY */
+
+ h2 {
+    font-family: 'Calibre';
+    font-size: 2em;
+    font-weight: bold;
+    color: #CCD6F6;
+}
+
+
+h2::before {
+    content: "0"counter(item2) ".";
+    counter-increment: item2;
+    font-family: 'SF mono';
+    width: 2em;
+    color: #64FFDA;
+    display: inline-block;
+    text-align: right;
+    margin-right: 0.5em;
+    font-size: 0.6em; 
+    padding-bottom: 3em;
+}
+
+h2::after {
+    content: '―――――――';
+    /* color: #0A192F; */
+    color: #8892b050;
+  margin-left: 1em;
+}
+
+#content_container {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 80%;
+    padding-top: 8em;
+    counter-reset: item2;
+}
+
 /* LEFT BAR */
 
 .leftbar_img {
@@ -94,7 +151,7 @@ li.navbar_items::before {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding-left: 3.5em;
 }
@@ -109,9 +166,95 @@ li#leftbar_border::after {
   margin-top: 2em;
   }
 
-/* BODY */
+/* HOMEPAGE */
 
+#homePage {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    height: 100vh;
 
+}
+
+#homepage_title {
+    padding-bottom: 1em;
+}
+
+#homepage_description {
+    font-family: 'Calibre';
+    line-height: 1.2em;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+
+#homepage_button {
+    text-decoration: none;
+    color: #64FFDA;
+    font-size: 0.8em;
+    width: 10em;
+    padding: 1.5em;
+    border: 1px solid #64FFDA;
+    border-radius: 0.3em;
+    text-align: center;
+}
+
+/* ABOUT */
+
+#about {
+    height: 100vh;
+}
+
+#about_presentation {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+#about_text {
+width: 30%;
+display: flex;
+flex-direction: column;
+gap: 1.5em;
+font-family: 'Calibre';
+font-size: 1.4em;
+}
+
+#about_technos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 2em;
+    gap: 1em;
+    justify-content: space-between;
+    padding-left: 1em;
+}
+
+.about_techno_li::before {
+    content: '';
+    padding-right: 0.5em;
+    color: #64FFDA;
+}
+
+#wordpressMoove {
+    padding-left: 1.5em;
+}
+
+#img {
+    width: 20em;
+    height: 20em;
+border-radius: 2em;
+}
+
+/* ETUDES */
+
+#etudes {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10em;
+
+}
 
 /* FOOTER */
 
