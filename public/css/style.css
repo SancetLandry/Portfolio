@@ -103,11 +103,17 @@ li.navbar_items::before {
 
 /* BODY */
 
+ h3 {
+    font-weight: bold;
+ }
+
  h2 {
     font-family: 'Calibre';
     font-size: 2em;
     font-weight: bold;
     color: #CCD6F6;
+    height: 1em;
+    padding-bottom: 2em;
 }
 
 
@@ -199,6 +205,11 @@ li#leftbar_border::after {
     text-align: center;
 }
 
+#homepage_button:hover {
+    color: black;
+    background-color: #64FFDA;
+}
+
 /* ABOUT */
 
 #about {
@@ -251,14 +262,85 @@ border-radius: 2em;
 
 #etudes {
     display: flex;
-    flex-direction: row;
-    padding-left: 10em;
+    flex-direction: column;
+    padding-left: 5em;
+    height: 100vh;
+    font-family: 'Calibre';
+    line-height: 1.2em;
+    font-weight: 400;
 
+}
+
+#etudes_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    font-size: 1.4em;
+}
+
+.etudes_card_params {
+    background-color: #122d5541;
+    border-radius: 0.5em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 55%;
+}
+
+/* PROJETS */
+
+#projets {
+    height: 100vh;
+    padding-left: 10em;
+}
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    padding-left: 15em;
+    gap: 2em;
+    width: 40%;
+}
+
+#contact_title {
+    font-size: 1.7em;
+}
+
+#contact_button {
+    text-decoration: none;
+    color: #64FFDA;
+    font-size: 0.8em;
+    width: 14em;
+    padding: 1.2em;
+    border: 1px solid #64FFDA;
+    border-radius: 0.3em;
+    text-align: center;
+}
+
+#contact_button:hover {
+    color: black;
+    background-color: #64FFDA;
+}
+
+#contact_container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    text-align: center;
+    align-items: center;
+    font-family: 'Calibre';
+    font-size: 1.4em;
 }
 
 /* FOOTER */
 
 footer {
-    text-align: center;
+    padding-left: 30em;
     color: #8892B0;
+    font-size: 0.8em;
+    padding-bottom: 1em;
 }
