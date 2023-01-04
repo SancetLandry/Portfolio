@@ -51,20 +51,37 @@
         </div>
         <div id="projets">
             <h2 id="projets_title">Mes projets en cours / terminés </h2>
-            <div align="center">
-                <div class="contener_slideshow">
-                  <div class="contener_slide">
-                    <div class="slid_1">
-                        <div class="slideshow_buttonContainer"><a class="slideshow_text" href="#">En savoir plus</a></div>
-                        <img class="slideshow_img" src="/img/portfolio-1.png"></div>
-                    <div class="slid_2">
-                        <img class="slideshow_img" src="/img/portfolio-2.png"></div>
-                    <div class="slid_3">
-                        <div class="slideshow_buttonContainer"><a class="slideshow_text" href="#">En savoir plus</a></div>
-                        <img class="slideshow_img" src="/img/portfolio-3.png"></div>
-                  </div>
-                </div>
+              <div id="slider_container" class="w3-content w3-display-container">
+               <a href="#"><img class="mySlides" src="/img/portfolio-1.png" style="width:100%"></a> 
+               <a href="#"><img class="mySlides" src="/img/portfolio-2.png" style="width:100%"></a> 
+               <a href="#"><img class="mySlides" src="/img/portfolio-3.png" style="width:100%"></a> 
+              <div id="slider_buttonContainer">
+                <button class="slider_button" onclick="plusDivs(-1)"><</button>
+                <button class="slider_button" onclick="plusDivs(1)">></button>
+            </div>
+                
               </div>
+              <p id="projets_subtitle">Tu veux en savoir plus ? Clique sur les slides ! </p> 
+              
+              <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+              
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+              
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+              }
+              </script>
         </div>
         <div id="contact">
             <h2>Me contacter</h2>
