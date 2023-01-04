@@ -359,7 +359,8 @@ border-radius: 2em;
 .slid_3{left: 2560px;}
 .contener_slide
 {
-  width: 1280px;
+  animation-delay: 2s;
+  width: 3840px;
   height: 600px;
   left:0px;
   position: absolute;
@@ -372,9 +373,10 @@ border-radius: 2em;
   -ms-animation-duration: 10s;
   -ms-animation-iteration-count:infinite;
   -ms-animation-name: anim_slide;
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-iteration-count:infinite;
   animation-name: anim_slide;
+  
 }
 
 .slideshow_img {
