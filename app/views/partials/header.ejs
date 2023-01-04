@@ -22,13 +22,25 @@
             </div>
             <ol id="navbar_containerItems">
                 <li class="navbar_items"><a class="navbar_itemsStyle" href="#about">A propos</a></li>
-                <li class="navbar_items"><a class="navbar_itemsStyle" href="#">Etudes</a></li>
-                <li class="navbar_items"><a class="navbar_itemsStyle" href="#">Projets</a></li>
-                <li class="navbar_items"><a class="navbar_itemsStyle" href="#">Contact</a></li>
+                <li class="navbar_items"><a class="navbar_itemsStyle" href="#etudes">Etudes</a></li>
+                <li class="navbar_items"><a class="navbar_itemsStyle" href="#projets">Projets</a></li>
+                <li class="navbar_items"><a class="navbar_itemsStyle" href="#contact">Contact</a></li>
             </ol>
             <div id="navbar_itemsButton">
                 <a class="navbar_itemsCV" href="/cv/resume.pdf" target="_blank" rel="noopener noreferrer">Curriculum</a>
             </div>
                 
         </nav>
+        <script>
+            let prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+              let currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-100px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+          </script>
     </header>

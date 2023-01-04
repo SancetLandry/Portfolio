@@ -8,7 +8,7 @@
             <h1 class="color_cyan" id="homepage_title">hello world ! Mon nom est :</h1>
             <p class="color_whitegrey" id="font_change">Landry Sancet. <br> <span class="color_darkgrey">Nous allons chambouler le web.</span> </p>
             <p class="color_darkgrey" id="homepage_description">Bienvenue sur mon portfolio, celui-ci sera amené à évoluer  au fur à mesure <br> de mon apprentissage. Actuellement en formation  chez O'clock. Je cherche <br> déjà une alternance, un stage ou bien un poste dès à présent.</p>
-            <a class="color1" id="homepage_button" href="">VOIR LES TRAVAUX</a>
+            <a class="color1" id="homepage_button" href="#projets">VOIR LES TRAVAUX</a>
         </div>
         <div id="about">
             <h2>Qui suis-je ?</h2>
@@ -50,17 +50,35 @@
             </div>
         </div>
         <div id="projets">
-            <h2>Mes projets en cours / terminés </h2>
-            
+            <h2 id="projets_title">Mes projets en cours / terminés </h2>
+            <div align="center">
+                <div class="contener_slideshow">
+                  <div class="contener_slide">
+                    <div class="slid_1">
+                        <div class="slideshow_buttonContainer"><a class="slideshow_text" href="#">En savoir plus</a></div>
+                        <img class="slideshow_img" src="/img/portfolio-1.png"></div>
+                    <div class="slid_2">
+                        <div class="slideshow_buttonContainer"><a class="slideshow_text" href="#">En savoir plus</a></div>
+                        <img class="slideshow_img" src="/img/portfolio-1.png"></div>
+                    <div class="slid_3">
+                        <div class="slideshow_buttonContainer"><a class="slideshow_text" href="#">En savoir plus</a></div>
+                        <img class="slideshow_img" src="/img/portfolio-1.png"></div>
+                  </div>
+                </div>
+              </div>
         </div>
         <div id="contact">
             <h2>Me contacter</h2>
             <div id="contact_container">
                 <h3 class="color_whitegrey" id="contact_title">A l'écoute d'opportunités</h3>
                 <p class="color_darkgrey">Actuellement en formation, je suis dores et déjà à la recherche d'une alternance, d'un stage ou d'un poste dans le secteur. <br> <br> Discutons-en !   </p>
-                <a class="color1" id="contact_button" href="">Envoyer un pigeon</a>
+                <form>
+                    <input type="button" value="Envoyer un mail" onclick="window.location.href='mailto:contact.landrys@gmail.com'" />
+                  </form>
             </div>
         </div>
+
+        
         <%- include('partials/footer') %>
 
 
