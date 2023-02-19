@@ -3,11 +3,7 @@
 Hello, je suis Landry et si tu est ici, c'est que tu voulais en savoir plus sur mon Portfolio. Ici, tu trouveras tout le code que j'ai utilisé, produit, les logiques, quelques commentaires et surtout, tu pourras voir mon travail. N'hésitez pas à proposer des améliorations, je suis à l'écoute ! 
 
 
-<details>
-  <summary>Spoiler warning</summary>
   ![](preview.png)
-  
-</details>
 
 
 ## 🛠️  Installation & Set Up
